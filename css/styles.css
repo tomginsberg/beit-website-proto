@@ -1,0 +1,87 @@
+body {
+    background-size: 400% 400%;
+    background-image: radial-gradient(#081f52, #000000, #081f52, #0b3d91);
+    animation: animate 60s ease infinite;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Computer Modern Sans', sans-serif;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180%;
+    /* z-index: -1; */
+    background-position: 50% 50%;
+}
+
+
+@keyframes animate {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+.gradient-text {
+    background-image: linear-gradient(45deg, #081f52, #bac8dc, #081f52, #065ae5);
+    background-size: 400% 400%;
+    animation: animate 10s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* z-index: 10000; */
+}
+
+.job-posting{
+    background-image: linear-gradient(45deg,#081f52, #000000, #081f52, #0b3d91);
+    background-size: 400% 400%;
+    background-position: 0 50%;
+    /* z-index: 10000; */
+}
+
+.theme-block{
+    background-image: linear-gradient(45deg,#081f52, #000000, #081f52, #0b3d91);
+    background-size: 400% 400%;
+    background-position: 0 50%;
+    /* z-index: 10000; */
+    border-radius: 55px;
+}
+
+#particles-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 180%; /* Increase the height to create the parallax effect */
+    z-index: -1;
+    overflow: hidden; /* Hide the overflow to avoid scrollbar issues */
+  }
+
+.logo-bg {
+/* background: rgb(0, 0, 0); */
+border-radius: 55px; /* This creates a fully rounded shape */
+padding: 0.1rem;
+display: flex; /* Ensures the content is centered */
+align-items: center; /* Center align vertically */
+justify-content: center; /* Center align horizontally */
+border: .5px solid white;
+}
+
+  .header-title {
+font-family: 'Computer Modern Sans', sans-serif;
+}
+
+  body {
+font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
