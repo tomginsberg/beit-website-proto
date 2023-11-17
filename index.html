@@ -11,47 +11,58 @@
   <link rel="stylesheet" type="text/css"
         href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
         <script src="//unpkg.com/alpinejs" defer></script>
+        <link href="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/flowbite/dist/flowbite.min.js"></script>
+
 
 </head>
 
-<body class="bg-gray-100">
+<body>
 
+
+
+
+
+  <nav id="navbar" class="fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+      <img src="media/beit.svg" alt="Logo" class="h-15 w-30"> 
+        <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">beit.tech</span> -->
+    </a>
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+        <li>
+          <a href="our-work.html" class="px-4 py-2 text-white hover:text-green-500 transition duration-300 hover:underline" aria-current="page">Our Work</a>
+        </li>
+        <li>
+          <a href="blog.html" class="px-4 py-2 text-white hover:text-green-500 transition duration-300 hover:underline">Blog</a>
+        </li>
+        <li>
+          <a href="#" class="px-4 py-2 text-white hover:text-green-500 transition duration-300 hover:underline">News</a>
+        </li>
+        <li>
+          <a href="#" class="px-4 py-2 text-white hover:text-green-500 transition duration-300 hover:underline">Careers</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
   
 
-  <!-- Navbar container -->
-          <div id="navbar" class="fixed inset-x-0 top-0 transition duration-300 z-50">
-            <!-- Navbar content -->
-            <nav class="flex items-center justify-between p-6">
-              <!-- Logo section -->
-              <div class="flex items-center">
-                <!-- Placeholder for logo image -->
-                <div >
-                  <!-- Adjust the size of the image as needed -->
-                  <img src="media/beit.svg" alt="Logo" class="h-15 w-30"> 
-                </div>
-                
-              </div>
-
-      <!-- Navigation items -->
-      
-      <div class="flex">
-        <!-- <div class="logo-bg"> -->
-        <a href="#" class="px-4 py-2 text-white hover:text-green-500 transition duration-300 hover:underline">Products</a>
-        <a href="#" class="px-4 py-2 text-white hover:text-green-500 transition duration-300 hover:underline">Research</a>
-        <a href="#" class="px-4 py-2 text-white hover:text-green-500 transition duration-300 hover:underline">Blog</a>
-        <a href="#" class="px-4 py-2 text-white hover:text-green-500 transition duration-300 hover:underline">News</a>
-        <a href="#" class="px-4 py-2 text-white hover:text-green-500 transition duration-300 hover:underline">Careers</a>
-        <a href="#" class="px-4 py-2 text-white hover:text-green-500 transition duration-300 hover:underline">Contact</a>
-      <!-- </div> -->
-      </div>
-    </nav>
-  </div>
 
   <div class="min-h-screen flex flex-col justify-center items-center px-4">">
-    <h1 class="text-left text-6xl my-4 text-white">
+    <h1 class="text-center text-6xl my-4 text-white">
       BEIT
     </h1>
-    <p class="text-left text-xl mb-6 text-white">
+    <p class="text-center text-xl mb-6 text-white">
       Approaching Hard Problems With Algorithms For Quantum Computers
     </p>
     <a href="#aboutus" id="learnMoreBtn" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
@@ -59,20 +70,20 @@
     </a>
   </div>
 
-  <div class="bg-black text-white p-10 flex justify-between items-center" id="aboutus">
-    <div class="max-w-xl">
-      <h1 class="text-5xl font-bold mb-4">We are a quantum computing software R&D company.</h1>
-      <p class="mb-4">We develop novel quantum algorithms and their implementations with the aim of pushing the boundary of what is possible on quantum hardware at any given time. Thus we work on both practical software engineering within limits imposed by currently available quantum hardware as well as on speeding up theoretical algorithms giving us the edge wherever advances of hardware may take us. Our solutions offer to bring useful applications of quantum computers not only sooner, but with greater reliability and speed.
-      </p>
+  <div class="flex flex-col md:flex-row bg-black text-white p-10 items-center gap-22" id="aboutus">
+    <div class="flex-1 md:mr-8">
+      <h1 class="text-6xl font-bold mb-4">We are a quantum computing software R&D company.</h1>
+      <p class="mb-4">We develop novel quantum algorithms and their implementations with the aim of pushing the boundary of what is possible on quantum hardware at any given time. Thus we work on both practical software engineering within limits imposed by currently available quantum hardware as well as on speeding up theoretical algorithms giving us the edge wherever advances of hardware may take us. Our solutions offer to bring useful applications of quantum computers not only sooner, but with greater reliability and speed.</p>
       <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
         Check out our work!
       </button>
     </div>
-      <div class="w-1/2 h-65 w-65 bg-black">
-        <image src="media/wave.svg" class="object-cover">
-      </div>
+    <div class="flex-1">
+        <img src="media/wave.svg" alt="Quantum Wave" class="object-cover w-full h-auto">
     </div>
-  </div>
+</div>
+
+
   
   <!-- <section class="container mx-auto px-4 py-16" id="aboutus">
     <br><br>
