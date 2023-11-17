@@ -54,7 +54,7 @@
     <p class="text-left text-xl mb-6 text-white">
       Approaching Hard Problems With Algorithms For Quantum Computers
     </p>
-    <a href="#aboutus" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+    <a href="#aboutus" id="learnMoreBtn" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
       Learn More
     </a>
   </div>
@@ -126,6 +126,20 @@ function changeNavbarOpacityOnScroll() {
 // Initialize the function when the page loads
 window.onload = changeNavbarOpacityOnScroll;
   </script>
+
+<script>
+  document.getElementById('learnMoreBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    var aboutUsSection = document.getElementById('aboutus');
+    var navbarHeight = document.querySelector('#navbar').offsetHeight; // Replace 'nav' with your navbar selector if it's different
+    var scrollTarget = aboutUsSection.offsetTop - navbarHeight;
+    
+    window.scrollTo({
+      top: scrollTarget,
+      behavior: 'smooth'
+    });
+  });
+</script>
 
 </body>
 
